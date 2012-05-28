@@ -1,8 +1,8 @@
-class Promotion::Rules::Role < Spree::PromotionRule
+class Spree::Promotion::Rules::Role < Spree::PromotionRule
   belongs_to :role
   has_and_belongs_to_many :roles, 
                           :class_name => "::Role", 
-                          :join_table => "promotion_rules_roles", 
+                          :join_table => "spree_promotion_rules_roles", 
                           :foreign_key => "promotion_rule_id"
                           
   def eligible?(order, options = {})
