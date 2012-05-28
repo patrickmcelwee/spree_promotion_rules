@@ -1,4 +1,4 @@
-class Admin::RolesController < Admin::ResourceController
+class Spree::Admin::RolesController < Spree::Admin::ResourceController
   before_filter :set_format  
   before_filter :check_json_authenticity, :only => :index
   
